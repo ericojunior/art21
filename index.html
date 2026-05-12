@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ATR21 LOG | Terceirização de Serviços Logísticos</title>
   <meta name="description" content="ATR21 LOG - Terceirização de serviços logísticos em Goiânia e região metropolitana. Carga e descarga, separação de pedidos, auxiliar logístico, conferente, assistente administrativo e motorista de empilhadeira." />
+  <link rel="icon" href="favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
       --blue-dark: #0B1B45;
@@ -491,8 +495,1007 @@
       .card, .cta-box, .coverage-panel, .hero-card { padding: 22px; }
     }
   </style>
+
+  <!-- Premium (Apple/Google-like) override style -->
+  <style id="premium-style">
+    body > :not(#premium-root) { display: none !important; }
+
+    :root{
+      --bg0:#070A12;
+      --bg1:#0B1230;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.10);
+      --stroke:rgba(255,255,255,.12);
+      --text:#EAF0FF;
+      --muted:rgba(234,240,255,.72);
+      --muted2:rgba(234,240,255,.56);
+      --blue:#3B82F6;
+      --cyan:#22D3EE;
+      --green:#34D399;
+      --shadow: 0 24px 60px rgba(0,0,0,.42);
+      --radius: 22px;
+      --container: 1160px;
+    }
+
+    body{
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(900px 600px at 10% 10%, rgba(59,130,246,.35), transparent 60%),
+        radial-gradient(900px 600px at 90% 0%, rgba(34,211,238,.18), transparent 55%),
+        radial-gradient(900px 600px at 85% 85%, rgba(52,211,153,.12), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      color: var(--text);
+      overflow-x:hidden;
+    }
+
+    #premium-root img{ max-width:100%; display:block; }
+    #premium-root a{ color:inherit; text-decoration:none; }
+    #premium-root button{ font:inherit; }
+
+    #premium-root .container{
+      width: min(var(--container), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    #premium-root .progress{
+      position: fixed;
+      top:0; left:0;
+      width: 100%;
+      height: 3px;
+      z-index: 80;
+      background: rgba(255,255,255,.06);
+    }
+    #premium-root .progress > div{
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      box-shadow: 0 10px 25px rgba(34,211,238,.25);
+      transform-origin: 0 50%;
+    }
+
+    #premium-root .topbar{
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(7,10,18,.65);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    #premium-root .topbar-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 18px;
+      padding: 14px 0;
+    }
+    #premium-root .brand{
+      display:flex;
+      align-items:center;
+      gap: 14px;
+      min-width: 0;
+    }
+    #premium-root .brand img{
+      width: 140px;
+      filter: drop-shadow(0 12px 22px rgba(0,0,0,.35));
+    }
+    #premium-root .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap: 2px;
+      line-height:1.1;
+      min-width: 0;
+    }
+    #premium-root .brand-text strong{
+      font-size: 13px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: rgba(234,240,255,.92);
+    }
+    #premium-root .brand-text span{
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(234,240,255,.62);
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      max-width: 44ch;
+    }
+
+    #premium-root .nav{
+      display:flex;
+      align-items:center;
+      gap: 16px;
+    }
+    #premium-root .nav a{
+      font-weight: 700;
+      font-size: 14px;
+      color: rgba(234,240,255,.78);
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: .25s ease;
+    }
+    #premium-root .nav a:hover{
+      color: rgba(255,255,255,.95);
+      border-color: rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      transform: translateY(-1px);
+    }
+    #premium-root .nav a.is-active{
+      color: rgba(255,255,255,.95);
+      background: rgba(59,130,246,.16);
+      border-color: rgba(59,130,246,.25);
+    }
+
+    #premium-root .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 10px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.92);
+      transition: transform .25s ease, background .25s ease, border-color .25s ease;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    #premium-root .btn:hover{ transform: translateY(-2px); border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.10); }
+    #premium-root .btn:active{ transform: translateY(0px) scale(.98); }
+    #premium-root .btn-primary{
+      border-color: rgba(59,130,246,.35);
+      background: linear-gradient(90deg, rgba(59,130,246,.95), rgba(34,211,238,.85));
+      box-shadow: 0 18px 40px rgba(59,130,246,.28);
+      color: white;
+    }
+    #premium-root .btn-primary:hover{ filter: brightness(1.03); }
+    #premium-root .btn-ghost{ background: transparent; border-color: rgba(255,255,255,.12); }
+
+    #premium-root .menu-btn{
+      display:none;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.92);
+      border-radius: 14px;
+      padding: 10px 12px;
+      line-height: 1;
+    }
+
+    #premium-root .drawer{
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      display:none;
+    }
+    #premium-root .drawer.is-open{ display:block; }
+    #premium-root .drawer .backdrop{
+      position:absolute; inset:0;
+      background: rgba(0,0,0,.58);
+      backdrop-filter: blur(10px);
+    }
+    #premium-root .drawer .panel{
+      position:absolute;
+      right: 12px; top: 12px;
+      width: min(420px, calc(100% - 24px));
+      border-radius: 22px;
+      background: rgba(12,16,30,.92);
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: var(--shadow);
+      padding: 14px;
+      transform: translateY(-8px);
+    }
+    #premium-root .drawer .panel a{
+      display:block;
+      padding: 14px 14px;
+      border-radius: 16px;
+      color: rgba(234,240,255,.86);
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: .25s ease;
+    }
+    #premium-root .drawer .panel a:hover{
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.10);
+      transform: translateX(2px);
+    }
+    #premium-root .drawer .panel .row{
+      display:flex;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    #premium-root .drawer .panel .row .btn{ flex: 1; }
+
+    #premium-root .hero{
+      padding: 62px 0 28px;
+      position: relative;
+    }
+    #premium-root .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 34px;
+      align-items: center;
+    }
+    #premium-root .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(59,130,246,.12);
+      border: 1px solid rgba(59,130,246,.22);
+      color: rgba(234,240,255,.86);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-size: 12px;
+      width: fit-content;
+    }
+    #premium-root .eyebrow .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, var(--cyan), var(--blue));
+      box-shadow: 0 0 0 6px rgba(34,211,238,.12);
+    }
+    #premium-root h1{
+      margin: 18px 0 14px;
+      font-size: clamp(36px, 4.8vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -0.04em;
+    }
+    #premium-root .gradient-text{
+      background: linear-gradient(90deg, rgba(255,255,255,.98), rgba(34,211,238,.92));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    #premium-root .lead{
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 68ch;
+    }
+    #premium-root .hero-actions{
+      display:flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+    #premium-root .chips{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    #premium-root .chip{
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      color: rgba(234,240,255,.80);
+      font-weight: 700;
+      font-size: 14px;
+      backdrop-filter: blur(10px);
+      transition: transform .25s ease, background .25s ease, border-color .25s ease;
+    }
+    #premium-root .chip:hover{ transform: translateY(-2px); background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.16); }
+
+    #premium-root .visual{
+      position: relative;
+      border-radius: 28px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      box-shadow: var(--shadow);
+    }
+    #premium-root .visual::before{
+      content:"";
+      position:absolute;
+      inset: -60px;
+      background: radial-gradient(420px 320px at 20% 10%, rgba(34,211,238,.35), transparent 60%),
+                  radial-gradient(420px 320px at 80% 90%, rgba(59,130,246,.28), transparent 55%);
+      filter: blur(18px);
+      opacity: .75;
+      pointer-events:none;
+      z-index: 1;
+    }
+    #premium-root .visual .media{
+      position: relative;
+      z-index: 2;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+    #premium-root .visual img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.08);
+      transform-origin: 50% 50%;
+      filter: saturate(1.06) contrast(1.06);
+    }
+    #premium-root .visual .caption{
+      position: relative;
+      z-index: 2;
+      padding: 18px 18px 20px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      background: linear-gradient(180deg, rgba(10,14,26,.22), rgba(10,14,26,.64));
+    }
+    #premium-root .kpis{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+    #premium-root .kpi{
+      border-radius: 18px;
+      padding: 12px 12px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    #premium-root .kpi strong{
+      display:block;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(234,240,255,.70);
+      margin-bottom: 6px;
+    }
+    #premium-root .kpi span{
+      display:block;
+      font-weight: 800;
+      font-size: 14px;
+      color: rgba(255,255,255,.92);
+      line-height: 1.25;
+    }
+
+    #premium-root section{ padding: 56px 0; }
+    #premium-root section.anchor{ scroll-margin-top: 92px; }
+    #premium-root .section-title{
+      display:flex;
+      align-items:flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    #premium-root .section-title h2{
+      margin:0;
+      font-size: clamp(26px, 3.4vw, 42px);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+    #premium-root .section-title p{
+      margin:0;
+      max-width: 72ch;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    #premium-root .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      color: rgba(234,240,255,.80);
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    #premium-root .grid-2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    #premium-root .card{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 18px 40px rgba(0,0,0,.24);
+      backdrop-filter: blur(12px);
+      transition: transform .28s ease, background .28s ease, border-color .28s ease;
+      position: relative;
+      overflow:hidden;
+    }
+    #premium-root .card:hover{
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,.16);
+      background: rgba(255,255,255,.08);
+    }
+    #premium-root .icon{
+      width: 52px; height: 52px;
+      border-radius: 18px;
+      display:grid;
+      place-items:center;
+      margin-bottom: 14px;
+      background: linear-gradient(145deg, rgba(59,130,246,.20), rgba(34,211,238,.14));
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 16px 30px rgba(59,130,246,.10);
+      font-size: 22px;
+    }
+    #premium-root .card h3{ margin: 0 0 8px; font-size: 20px; letter-spacing: -0.01em; }
+    #premium-root .card p{ margin: 0; color: var(--muted); line-height: 1.7; font-size: 15px; }
+
+    #premium-root .services{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 14px;
+    }
+    #premium-root .service{
+      border-radius: 20px;
+      padding: 18px 18px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      transition: transform .28s ease, background .28s ease, border-color .28s ease;
+      box-shadow: 0 14px 30px rgba(0,0,0,.18);
+      backdrop-filter: blur(12px);
+      position: relative;
+      overflow:hidden;
+    }
+    #premium-root .service:hover{
+      transform: translateY(-6px);
+      border-color: rgba(255,255,255,.16);
+      background: rgba(255,255,255,.08);
+    }
+    #premium-root .service strong{ display:block; font-size: 16px; letter-spacing: -0.01em; margin-bottom: 10px; color: rgba(255,255,255,.92); }
+    #premium-root .service ul{ margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.7; font-size: 14px; }
+
+    #premium-root .feature{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: center;
+      margin-top: 12px;
+    }
+    #premium-root .feature .media{
+      border-radius: 26px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      box-shadow: var(--shadow);
+      aspect-ratio: 4/3;
+    }
+    #premium-root .feature .media img{
+      width:100%; height:100%;
+      object-fit: cover;
+      transform: scale(1.10);
+      filter: saturate(1.05) contrast(1.05);
+    }
+    #premium-root .feature .content{ padding: 10px; }
+    #premium-root .feature .bullets{ display:grid; gap: 10px; margin-top: 14px; }
+    #premium-root .bullet{
+      display:grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(12px);
+    }
+    #premium-root .bullet .check{
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      display:grid;
+      place-items:center;
+      background: linear-gradient(145deg, rgba(59,130,246,.95), rgba(34,211,238,.85));
+      color: #fff;
+      font-weight: 900;
+    }
+    #premium-root .bullet strong{ display:block; margin-bottom: 4px; }
+    #premium-root .bullet span{ display:block; color: var(--muted); line-height: 1.6; font-size: 14px; }
+
+    #premium-root .gallery{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 14px;
+    }
+    #premium-root .gcard{
+      border-radius: 24px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      box-shadow: 0 18px 44px rgba(0,0,0,.24);
+      transition: transform .28s ease, border-color .28s ease;
+    }
+    #premium-root .gcard:hover{ transform: translateY(-6px); border-color: rgba(255,255,255,.18); }
+    #premium-root .gcard .media{ aspect-ratio: 4/3; overflow:hidden; background: rgba(255,255,255,.04); }
+    #premium-root .gcard img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.12);
+      transform-origin: 50% 50%;
+      filter: saturate(1.06) contrast(1.06);
+    }
+    #premium-root .gcard .content{ padding: 16px 16px 18px; }
+    #premium-root .gcard h3{ margin: 0 0 6px; font-size: 18px; letter-spacing: -0.01em; }
+    #premium-root .gcard p{ margin:0; color: var(--muted); line-height: 1.7; font-size: 14px; }
+
+    #premium-root .cta{ padding: 70px 0 86px; }
+    #premium-root .cta-box{
+      border-radius: 30px;
+      padding: 34px;
+      background:
+        radial-gradient(920px 420px at 20% 0%, rgba(34,211,238,.20), transparent 60%),
+        radial-gradient(920px 420px at 90% 100%, rgba(59,130,246,.26), transparent 55%),
+        linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow:hidden;
+    }
+    #premium-root .cta-box h2{
+      margin:0 0 10px;
+      font-size: clamp(28px, 3.8vw, 44px);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+    }
+    #premium-root .cta-box p{
+      margin:0 0 18px;
+      color: var(--muted);
+      line-height:1.7;
+      font-size: 16px;
+      max-width: 78ch;
+    }
+    #premium-root .cta-row{ display:flex; gap: 12px; flex-wrap: wrap; align-items:center; }
+    #premium-root .note{ margin-top: 12px; color: var(--muted2); font-size: 13px; line-height: 1.6; }
+
+    #premium-root footer{
+      padding: 26px 0 42px;
+      text-align:center;
+      color: rgba(234,240,255,.62);
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.10);
+    }
+
+    #premium-root [data-reveal]{ will-change: transform, opacity; }
+
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior: auto; }
+      #premium-root .btn, #premium-root .card, #premium-root .service, #premium-root .chip, #premium-root .gcard{ transition: none !important; }
+    }
+    @media (max-width: 980px){
+      #premium-root .hero-grid{ grid-template-columns: 1fr; }
+      #premium-root .kpis{ grid-template-columns: 1fr; }
+      #premium-root .gallery{ grid-template-columns: 1fr; }
+      #premium-root .services{ grid-template-columns: 1fr; }
+      #premium-root .feature{ grid-template-columns: 1fr; }
+      #premium-root .section-title{ flex-direction: column; align-items:flex-start; }
+    }
+    @media (max-width: 860px){
+      #premium-root .nav{ display:none; }
+      #premium-root .menu-btn{ display:inline-flex; }
+      #premium-root .brand img{ width: 128px; }
+    }
+    @media (max-width: 560px){
+      #premium-root .container{ width: min(var(--container), calc(100% - 28px)); }
+      #premium-root .hero{ padding-top: 44px; }
+      #premium-root .btn{ width: 100%; }
+      #premium-root .hero-actions{ gap: 10px; }
+      #premium-root .cta-box{ padding: 24px; }
+    }
+  </style>
 </head>
 <body>
+  <div id="premium-root">
+    <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+
+    <!-- Mobile drawer -->
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="backdrop" data-close-drawer></div>
+      <div class="panel" role="dialog" aria-modal="true" aria-label="Menu">
+        <a href="#sobre" data-close-drawer>Sobre</a>
+        <a href="#servicos" data-close-drawer>Serviços</a>
+        <a href="#atuacao" data-close-drawer>Atuação</a>
+        <a href="#contato" data-close-drawer>Contato</a>
+        <div class="row">
+          <a class="btn btn-primary" href="https://wa.me/5562991324322" target="_blank" rel="noopener noreferrer" data-close-drawer>WhatsApp</a>
+          <a class="btn btn-ghost" href="#servicos" data-close-drawer>Ver serviços</a>
+        </div>
+      </div>
+    </aside>
+
+    <header class="topbar" data-reveal>
+      <div class="container topbar-inner">
+        <a class="brand" href="#" aria-label="ATR21 LOG - Início">
+          <img src="logo.svg" alt="ATR21 LOG" />
+          <div class="brand-text">
+            <strong>ATR21 LOG</strong>
+            <span>Movimentações Logísticas • Goiânia e região</span>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#sobre" data-nav="sobre">Sobre</a>
+          <a href="#servicos" data-nav="servicos">Serviços</a>
+          <a href="#atuacao" data-nav="atuacao">Atuação</a>
+          <a href="https://wa.me/5562991324322" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 16px;" data-nav="contato">WhatsApp</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow" data-reveal>
+              <span class="dot" aria-hidden="true"></span>
+              Terceirização • Logística • Região metropolitana de Goiânia
+            </div>
+
+            <h1 data-reveal>
+              Terceirização de serviços logísticos para uma operação <span class="gradient-text">ágil</span>, <span class="gradient-text">organizada</span> e <span class="gradient-text">confiável</span>.
+            </h1>
+
+            <p class="lead" data-reveal>
+              A ATR21 LOG apoia empresas com equipes para carga e descarga, separação de pedidos, conferência, rotinas administrativas e operação com motorista — com foco em execução, padronização e velocidade de resposta.
+            </p>
+
+            <div class="hero-actions" data-reveal>
+              <a class="btn btn-primary" href="#contato">Solicitar atendimento</a>
+              <a class="btn" href="#servicos">Ver serviços</a>
+            </div>
+
+            <div class="chips" data-reveal>
+              <div class="chip">Atendimento regional</div>
+              <div class="chip">Time sob demanda</div>
+              <div class="chip">Comunicação direta</div>
+            </div>
+          </div>
+
+          <div class="visual" data-reveal>
+            <div class="media" id="heroParallax">
+              <img src="assets/warehouse2.jpg" alt="Ambiente de operação logística" />
+            </div>
+            <div class="caption">
+              <div class="pill" style="margin-bottom: 10px;">Operação com padrão e ritmo</div>
+              <div style="color: rgba(234,240,255,.80); line-height: 1.65; font-size: 14px;">
+                Terceirização com execução e previsibilidade — com apresentação premium e contato rápido no WhatsApp.
+              </div>
+              <div class="kpis">
+                <div class="kpi">
+                  <strong>Foco</strong>
+                  <span>Terceirização logística</span>
+                </div>
+                <div class="kpi">
+                  <strong>Atuação</strong>
+                  <span>Goiânia e região</span>
+                </div>
+                <div class="kpi">
+                  <strong>Contato</strong>
+                  <span>WhatsApp rápido</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="anchor">
+        <div class="container">
+          <div class="section-title" data-reveal>
+            <div>
+              <div class="pill">Sobre a ATR21</div>
+              <h2 style="margin-top: 12px;">Uma empresa voltada para terceirização de serviços logísticos.</h2>
+            </div>
+            <p>
+              Comunicação direta, visual premium e leitura rápida: a ideia é o visitante entender em poucos segundos quem é a ATR21 e como ela apoia a rotina operacional.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <article class="card" data-reveal>
+              <div class="icon">🏢</div>
+              <h3>Apresentação simples e objetiva</h3>
+              <p>Uma página enxuta, com narrativa comercial clara e CTAs bem posicionados para acelerar o primeiro contato.</p>
+            </article>
+            <article class="card" data-reveal>
+              <div class="icon">⚙️</div>
+              <h3>Operação com método</h3>
+              <p>Estruture seu discurso em torno de padrão, consistência e previsibilidade — os pontos que mais pesam para quem contrata terceirização.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="anchor">
+        <div class="container">
+          <div class="section-title" data-reveal>
+            <div>
+              <div class="pill">Serviços terceirizados</div>
+              <h2 style="margin-top: 12px;">Profissionais e funções para reforçar sua operação logística.</h2>
+            </div>
+            <p>
+              Cards com hierarquia e microinterações — estilo “produto premium”. Ajustamos fácil os textos conforme sua abordagem comercial.
+            </p>
+          </div>
+
+          <div class="services">
+            <article class="service" data-reveal>
+              <strong>Auxiliar logístico</strong>
+              <ul>
+                <li>Apoio de rotina e movimentação interna</li>
+                <li>Organização e padronização do fluxo</li>
+                <li>Suporte em etapas operacionais</li>
+              </ul>
+            </article>
+            <article class="service" data-reveal>
+              <strong>Carga e descarga</strong>
+              <ul>
+                <li>Equipe para ganho de ritmo</li>
+                <li>Redução de gargalos</li>
+                <li>Mais previsibilidade no dia a dia</li>
+              </ul>
+            </article>
+            <article class="service" data-reveal>
+              <strong>Conferente</strong>
+              <ul>
+                <li>Validação e consistência</li>
+                <li>Melhor controle do processo</li>
+                <li>Suporte em inventários e rotinas</li>
+              </ul>
+            </article>
+            <article class="service" data-reveal>
+              <strong>Assistente administrativo</strong>
+              <ul>
+                <li>Rotinas de apoio e documentação</li>
+                <li>Organização de informações</li>
+                <li>Agilidade no backoffice</li>
+              </ul>
+            </article>
+            <article class="service" data-reveal>
+              <strong>Motorista de empilhadeira</strong>
+              <ul>
+                <li>Operação e movimentação de cargas</li>
+                <li>Mais produtividade no pátio/armazém</li>
+                <li>Suporte em picos de demanda</li>
+              </ul>
+            </article>
+            <article class="service" data-reveal>
+              <strong>Motorista</strong>
+              <ul>
+                <li>Disponibilidade e presença</li>
+                <li>Apoio no transporte e rotas</li>
+                <li>Operação mais completa</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="atuacao" class="anchor">
+        <div class="container">
+          <div class="section-title" data-reveal>
+            <div>
+              <div class="pill">Área de atendimento</div>
+              <h2 style="margin-top: 12px;">Região metropolitana de Goiânia como base de atuação.</h2>
+            </div>
+            <p>
+              Um bloco com imagem e bullets “Apple-like”: ajuda a vender benefício com leitura rápida e visual forte.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="media" data-reveal id="featureParallax">
+              <img src="assets/forklift2.jpg" alt="Operação com empilhadeira em armazém" />
+            </div>
+            <div class="content">
+              <div class="bullets">
+                <div class="bullet" data-reveal>
+                  <div class="check">✓</div>
+                  <div>
+                    <strong>Atendimento regional</strong>
+                    <span>Goiânia e região metropolitana: mais proximidade, resposta rápida e comunicação direta.</span>
+                  </div>
+                </div>
+                <div class="bullet" data-reveal>
+                  <div class="check">✓</div>
+                  <div>
+                    <strong>Foco em terceirização</strong>
+                    <span>Mensagem central clara para empresas que precisam reforçar o time logístico com previsibilidade.</span>
+                  </div>
+                </div>
+                <div class="bullet" data-reveal>
+                  <div class="check">✓</div>
+                  <div>
+                    <strong>Visual premium</strong>
+                    <span>Animações suaves e cards com microinterações: site “diferenciado”, limpo e moderno.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 14px;" data-reveal>
+                <a class="btn btn-primary" href="https://wa.me/5562991324322" target="_blank" rel="noopener noreferrer">Quero orçamento rápido</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-title" data-reveal>
+            <div>
+              <div class="pill">Demonstração visual</div>
+              <h2 style="margin-top: 12px;">Imagens que reforçam a rotina operacional.</h2>
+            </div>
+            <p>
+              Galeria com hover e animações no scroll. Se preferir, trocamos por fotos reais da sua operação.
+            </p>
+          </div>
+
+          <div class="gallery">
+            <article class="gcard" data-reveal>
+              <div class="media" id="galleryParallax1">
+                <img src="assets/scanning.jpg" alt="Conferência e separação de pedidos" />
+              </div>
+              <div class="content">
+                <h3>Separação & conferência</h3>
+                <p>Organização, padronização e controle para melhorar o fluxo interno do armazém.</p>
+              </div>
+            </article>
+            <article class="gcard" data-reveal>
+              <div class="media" id="galleryParallax2">
+                <img src="assets/warehouse2.jpg" alt="Ambiente de logística e estoque" />
+              </div>
+              <div class="content">
+                <h3>Rotina operacional</h3>
+                <p>Equipe para apoiar o dia a dia e acelerar a execução com previsibilidade.</p>
+              </div>
+            </article>
+            <article class="gcard" data-reveal>
+              <div class="media" id="galleryParallax3">
+                <img src="assets/forklift2.jpg" alt="Movimentação de pallets" />
+              </div>
+              <div class="content">
+                <h3>Movimentação</h3>
+                <p>Operação completa com empilhadeira/motorista para reforçar produtividade nos picos.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="cta anchor">
+        <div class="container">
+          <div class="cta-box" data-reveal>
+            <h2>Quer apresentar a ATR21 com mais força comercial?</h2>
+            <p>Atendimento direto via WhatsApp: é só clicar e falar agora com a ATR21.</p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://wa.me/5562991324322" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+              <a class="btn" href="#servicos">Ver serviços</a>
+            </div>
+
+            <div class="note">WhatsApp: +55 (62) 99132-4322</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      ATR21 LOG • Terceirização de serviços logísticos • Região metropolitana de Goiânia
+    </footer>
+
+    <!-- GSAP for premium scroll animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+      (function(){
+        const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        // Progress bar
+        const bar = document.getElementById('progressBar');
+        const onScroll = () => {
+          const doc = document.documentElement;
+          const max = (doc.scrollHeight - doc.clientHeight) || 1;
+          const p = (doc.scrollTop / max) * 100;
+          if (bar) bar.style.width = p.toFixed(2) + '%';
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        // Mobile menu
+        const drawer = document.getElementById('drawer');
+        const menuBtn = document.getElementById('menuBtn');
+        const openDrawer = () => { drawer.classList.add('is-open'); drawer.setAttribute('aria-hidden', 'false'); };
+        const closeDrawer = () => { drawer.classList.remove('is-open'); drawer.setAttribute('aria-hidden', 'true'); };
+        menuBtn?.addEventListener('click', openDrawer);
+        drawer?.addEventListener('click', (e) => {
+          const t = e.target;
+          if (t && (t.matches('[data-close-drawer]') || t.closest('[data-close-drawer]'))) closeDrawer();
+        });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+
+        // Active nav highlight
+        const navLinks = new Map();
+        document.querySelectorAll('[data-nav]').forEach(a => navLinks.set(a.getAttribute('data-nav'), a));
+        const sections = ['sobre','servicos','atuacao','contato'].map(id => document.getElementById(id)).filter(Boolean);
+        const setActive = (id) => {
+          navLinks.forEach((el) => el.classList.remove('is-active'));
+          const el = navLinks.get(id);
+          if (el) el.classList.add('is-active');
+        };
+        if ('IntersectionObserver' in window) {
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach(ent => { if (ent.isIntersecting) setActive(ent.target.id); });
+          }, { root: null, threshold: 0.25 });
+          sections.forEach(s => io.observe(s));
+        }
+
+        // Smooth anchor offset (for sticky header)
+        document.querySelectorAll('#premium-root a[href^="#"]').forEach(a => {
+          a.addEventListener('click', (e) => {
+            const href = a.getAttribute('href');
+            if (!href || href === '#') return;
+            const target = document.querySelector(href);
+            if (!target) return;
+            e.preventDefault();
+            const headerH = document.querySelector('#premium-root .topbar')?.offsetHeight || 0;
+            const y = target.getBoundingClientRect().top + window.scrollY - headerH - 14;
+            window.scrollTo({ top: y, behavior: reduceMotion ? 'auto' : 'smooth' });
+          });
+        });
+
+        if (reduceMotion || !window.gsap) return;
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Initial load animation
+        const loadEls = document.querySelectorAll('#premium-root .topbar, #premium-root .eyebrow, #premium-root h1, #premium-root .lead, #premium-root .hero-actions, #premium-root .chips, #premium-root .visual');
+        gsap.set(loadEls, { opacity: 0, y: 14 });
+        gsap.to(loadEls, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.06 });
+
+        // Reveal on scroll
+        gsap.utils.toArray('#premium-root [data-reveal]').forEach((el) => {
+          if (el.classList.contains('topbar')) return;
+          gsap.fromTo(el, { opacity: 0, y: 18 }, {
+            opacity: 1, y: 0, duration: 0.85, ease: 'power3.out',
+            scrollTrigger: { trigger: el, start: 'top 86%', end: 'bottom 20%', toggleActions: 'play none none reverse' }
+          });
+        });
+
+        // Subtle parallax (Apple-like)
+        const parallax = (selector, strength) => {
+          const el = document.querySelector(selector);
+          if (!el) return;
+          gsap.to(el, { y: strength, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: 0.6 } });
+        };
+        parallax('#heroParallax img', -22);
+        parallax('#featureParallax img', -26);
+        parallax('#galleryParallax1 img', -20);
+        parallax('#galleryParallax2 img', -20);
+        parallax('#galleryParallax3 img', -20);
+
+        // Micro: magnetic-ish buttons
+        const magnets = document.querySelectorAll('#premium-root .btn-primary');
+        magnets.forEach((btn) => {
+          btn.addEventListener('mousemove', (e) => {
+            const r = btn.getBoundingClientRect();
+            const x = e.clientX - (r.left + r.width / 2);
+            const y = e.clientY - (r.top + r.height / 2);
+            gsap.to(btn, { x: x * 0.08, y: y * 0.10, duration: 0.25, ease: 'power3.out' });
+          });
+          btn.addEventListener('mouseleave', () => { gsap.to(btn, { x: 0, y: 0, duration: 0.35, ease: 'power3.out' }); });
+        });
+      })();
+    </script>
+  </div>
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
