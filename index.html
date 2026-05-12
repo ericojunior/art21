@@ -507,8 +507,8 @@
       --card2:rgba(255,255,255,.10);
       --stroke:rgba(255,255,255,.12);
       --text:#EAF0FF;
-      --muted:rgba(234,240,255,.72);
-      --muted2:rgba(234,240,255,.56);
+      --muted:rgba(234,240,255,.86);
+      --muted2:rgba(234,240,255,.70);
       --blue:#3B82F6;
       --cyan:#22D3EE;
       --green:#34D399;
@@ -745,12 +745,14 @@
       font-size: clamp(36px, 4.8vw, 64px);
       line-height: 1.03;
       letter-spacing: -0.04em;
+      color: rgba(255,255,255,.98);
     }
+    /* Evita texto azul em cima de fundo azul (melhor leitura) */
     #premium-root .gradient-text{
-      background: linear-gradient(90deg, rgba(255,255,255,.98), rgba(34,211,238,.92));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      color: rgba(255,255,255,.98);
+      background: none;
+      -webkit-background-clip: initial;
+      background-clip: initial;
     }
     #premium-root .lead{
       margin: 0 0 22px;
@@ -865,6 +867,7 @@
       font-size: clamp(26px, 3.4vw, 42px);
       letter-spacing: -0.03em;
       line-height: 1.1;
+      color: rgba(255,255,255,.96);
     }
     #premium-root .section-title p{
       margin:0;
@@ -922,7 +925,7 @@
       box-shadow: 0 16px 30px rgba(59,130,246,.10);
       font-size: 22px;
     }
-    #premium-root .card h3{ margin: 0 0 8px; font-size: 20px; letter-spacing: -0.01em; }
+    #premium-root .card h3{ margin: 0 0 8px; font-size: 20px; letter-spacing: -0.01em; color: rgba(255,255,255,.95); }
     #premium-root .card p{ margin: 0; color: var(--muted); line-height: 1.7; font-size: 15px; }
 
     #premium-root .services{
@@ -1020,7 +1023,7 @@
       filter: saturate(1.06) contrast(1.06);
     }
     #premium-root .gcard .content{ padding: 16px 16px 18px; }
-    #premium-root .gcard h3{ margin: 0 0 6px; font-size: 18px; letter-spacing: -0.01em; }
+    #premium-root .gcard h3{ margin: 0 0 6px; font-size: 18px; letter-spacing: -0.01em; color: rgba(255,255,255,.95); }
     #premium-root .gcard p{ margin:0; color: var(--muted); line-height: 1.7; font-size: 14px; }
 
     #premium-root .cta{ padding: 70px 0 86px; }
@@ -1139,7 +1142,7 @@
             </div>
 
             <h1 data-reveal>
-              Terceirização de serviços logísticos para uma operação <span class="gradient-text">ágil</span>, <span class="gradient-text">organizada</span> e <span class="gradient-text">confiável</span>.
+              Terceirização de serviços logísticos em Goiânia e região metropolitana.
             </h1>
 
             <p class="lead" data-reveal>
@@ -1165,7 +1168,7 @@
             <div class="caption">
               <div class="pill" style="margin-bottom: 10px;">Operação com padrão e ritmo</div>
               <div style="color: rgba(234,240,255,.80); line-height: 1.65; font-size: 14px;">
-                Terceirização com execução e previsibilidade — com apresentação premium e contato rápido no WhatsApp.
+                Terceirização para reforçar sua operação com equipe, organização e velocidade de resposta.
               </div>
               <div class="kpis">
                 <div class="kpi">
@@ -1194,7 +1197,7 @@
               <h2 style="margin-top: 12px;">Uma empresa voltada para terceirização de serviços logísticos.</h2>
             </div>
             <p>
-              Comunicação direta, visual premium e leitura rápida: a ideia é o visitante entender em poucos segundos quem é a ATR21 e como ela apoia a rotina operacional.
+              A ATR21 LOG atua com terceirização de serviços logísticos, apoiando empresas com profissionais para reforçar a operação no dia a dia.
             </p>
           </div>
 
@@ -1221,7 +1224,7 @@
               <h2 style="margin-top: 12px;">Profissionais e funções para reforçar sua operação logística.</h2>
             </div>
             <p>
-              Cards com hierarquia e microinterações — estilo “produto premium”. Ajustamos fácil os textos conforme sua abordagem comercial.
+              Principais funções para reforçar diferentes etapas do fluxo logístico — do operacional ao apoio administrativo.
             </p>
           </div>
 
@@ -1286,7 +1289,7 @@
               <h2 style="margin-top: 12px;">Região metropolitana de Goiânia como base de atuação.</h2>
             </div>
             <p>
-              Um bloco com imagem e bullets “Apple-like”: ajuda a vender benefício com leitura rápida e visual forte.
+              Atendimento regional e foco em terceirização: uma apresentação direta para facilitar o primeiro contato.
             </p>
           </div>
 
@@ -1314,7 +1317,7 @@
                   <div class="check">✓</div>
                   <div>
                     <strong>Visual premium</strong>
-                    <span>Animações suaves e cards com microinterações: site “diferenciado”, limpo e moderno.</span>
+                    <span>Apresentação clara e direta para reforçar confiança e acelerar a tomada de decisão.</span>
                   </div>
                 </div>
               </div>
@@ -1331,7 +1334,7 @@
         <div class="container">
           <div class="section-title" data-reveal>
             <div>
-              <div class="pill">Demonstração visual</div>
+              <div class="pill">Rotina operacional</div>
               <h2 style="margin-top: 12px;">Imagens que reforçam a rotina operacional.</h2>
             </div>
             <p>
